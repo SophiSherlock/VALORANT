@@ -1,0 +1,85 @@
+
+.header {
+    background: linear-gradient(135deg, #ba3a46, #1f2a35);
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* parágrafos dentro do header */
+.header p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: #ff4655;
+    font-size: 80px;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #ff4655;
+    transition: 0.3s;
+}
+
+/* efeito abaixo do título */
+.titulo::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #ff4655;
+    margin: 10px auto;
+    box-shadow: 0 0 10px #ff4655;
+}
+
+.subtitulo {
+    text-align: center;
+    color: white;
+}
+
+.header {
+    background: linear-gradient(135deg, #ba3a46, #1f2a35);
+    color: white;
+    padding: 30px;
+}
+
+.linha {
+    width: 150px;
+    height: 3px;
+    background-color: #ff4655;
+    margin: 30px auto;
+    box-shadow: 0 0 10px #ff4655;
+}
+
+.listaAgentes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+/* img dentro da lista */
+.agentImg {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* hover */
+.agentImg:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff4655;
+}
+
+.detalhesAgente {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.imgDetalhe {
+    width: 200px;
+}

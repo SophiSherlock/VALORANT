@@ -1,0 +1,37 @@
+.footer {
+    background: linear-gradient(135deg, #1f2a35, #ba3a46);
+    color: #ffffff;
+
+    padding: 30px 40px;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+}
+
+/* texto */
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* links */
+.footerLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footerLinks a:hover {
+    color: #ff4655;
+}
