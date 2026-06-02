@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import styles from '../style/Agents.module.css';
 
 function Agents() {
   const [agents, setAgents] = useState([]);
   const [selectedAgent, setSelectedAgent] = useState(null);
+  const detalhesRef = useRef(null)
 
   useEffect(() => {
     async function fetchData() {
@@ -61,14 +62,23 @@ function Agents() {
             key={agent.uuid}
             src={agent.displayIcon}
             className={styles.agentImg}
-            onClick={() => setSelectedAgent(agent)}
+            onClick={() => {
+  setSelectedAgent(agent);
+
+  setTimeout(() => {
+    detalhesRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }, 100);
+}}
           />
         ))}
       </div>
 
       {/* 📌 DETALHES */}
       {selectedAgent && (
-        <div className={styles.detalhesAgente}>
+        <div ref={detalhesRef}  className={styles.detalhesAgente}>
           <p><strong>Nome:</strong> {selectedAgent.displayName}</p>
           <p><strong>Descrição:</strong> {selectedAgent.description}</p>
           <p><strong>Role:</strong> {selectedAgent.role?.displayName}</p>

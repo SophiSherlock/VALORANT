@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import styles from '../../style/Header.module.css';
+import logo from '../../../img/valorant-logo-iu.png'
 const Header = () => {
     return(
 <>
     <header className={styles.header}>
+
+        <div className={styles.logoContainer}>
+        <img src={logo} alt="Valorant-logo" className={styles.logoImg} />
+
         <h1 className={styles.logo}>VALORANT</h1>
+        </div>
+
 
         <nav>
             <ul className={styles.navList}>
@@ -13,11 +20,11 @@ const Header = () => {
                 </li>
 
                 <li>
-                    <a href="Mapas.html" className={styles.link}>Mapas</a>     
+                    <Link to="Maps" className={styles.link}>Mapas</Link>     
                 </li>
 
                 <li>
-                    <a href="Times Brasileiros.html" className={styles.link}>Times Brasileiros</a>   
+                    <Link to="/Login" className={styles.link}>Entrar</Link>
                 </li>
 
                 <li>
