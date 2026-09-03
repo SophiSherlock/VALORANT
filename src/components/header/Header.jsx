@@ -30,6 +30,11 @@ const Header = () => {
                 <li>
                     <Link to="/" className={styles.link}>Home</Link>
                 </li>
+
+                <li>
+                    <Link to="/Conta" className={styles.link}>Conta</Link>
+                </li>
+
             </ul>
 
         </nav>

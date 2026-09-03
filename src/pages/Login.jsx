@@ -5,8 +5,10 @@ function Login() {
         const [nickname, setNickName] = useState("")
         const [email, setEmail] = useState("")
         const [password, setPassword] = useState("")
+        
         function handleSubmit(event) {
             event.preventDefault();
+            console.log(nickname, email, password);
             
         }
 
@@ -45,7 +47,7 @@ function Login() {
                     />
                 </div>
 
-                <button type="submit">Login</button>
+                <button type="submit" onClick={handleSubmit}>Login</button>
             </form>
         </div>
     );
