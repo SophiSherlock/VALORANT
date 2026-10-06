@@ -1,0 +1,122 @@
+/* Maps.module.css */
+
+.container {
+  max-width: 1000px;
+  padding: 20px;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.conteudoCentral {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background: linear-gradient(135deg, #ba3a46, #1f2a35);
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.headerImg {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.header p {
+  line-height: 1.6;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.linha {
+  width: 150px;
+  height: 3px;
+  background-color: #ff4655;
+  margin: 25px auto;
+  box-shadow: 0 0 10px #ff4655;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.input {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #ba3a46;
+  background-color: #1f2a35;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  border-color: #ff4655;
+  box-shadow: 0 0 10px #ff4655;
+}
+
+.button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff4655;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+  background-color: #e03e4d;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff4655;
+}
+
+.detalhesMapa {
+  background: linear-gradient(135deg, #1f2a35, #0f141a);
+  border: 1px solid #ba3a46;
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.tituloMapa {
+  color: #ff4655;
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #ff4655;
+}
+
+.imgDetalhe {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.detalhesTexto {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 800px;
+  margin: 10px auto;
+}

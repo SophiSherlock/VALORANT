@@ -2,15 +2,39 @@ import { useState } from "react";
 import styles from "../style/Login.module.css";
 
 function Login() {
-        const [nickname, setNickName] = useState("")
-        const [email, setEmail] = useState("")
-        const [password, setPassword] = useState("")
-        
-        function handleSubmit(event) {
-            event.preventDefault();
-            console.log(nickname, email, password);
-            
+    const [nickname, setNickName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+
+        try {
+            const resposta = await fetch("http://localhost:3000/auth/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    email,
+                    senha: password
+                })
+            });
+
+            const dados = await resposta.json();
+
+            if (!resposta.ok) {
+                alert(dados.mensagem);
+                return;
+            }
+
+            console.log(dados);
+            alert("Login realizado!");
+
+        } catch (erro) {
+            console.error("Erro:", erro);
         }
+    }
 
     return (
         <div className={styles.container}>
@@ -47,7 +71,7 @@ function Login() {
                     />
                 </div>
 
-                <button type="submit" onClick={handleSubmit}>Login</button>
+                <button type="submit">Login</button>
             </form>
         </div>
     );

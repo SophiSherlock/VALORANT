@@ -1,0 +1,124 @@
+.container {
+  max-width: 1000px;
+  padding: 20px;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+
+/* HEADER DO COMPONENTE */
+.header {
+  background: linear-gradient(135deg, #ba3a46, #1f2a35);
+  color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.tituloHome {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.linha {
+  width: 150px;
+  height: 3px;
+  background-color: #ff4655;
+  margin: 20px auto;
+  box-shadow: 0 0 10px #ff4655;
+}
+
+.descricaoHero {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+/* ÁREA DE BUSCA */
+.buscaContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.inputBusca {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: #0f141a;
+  border: 2px solid #ba3a46;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  min-width: 280px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputBusca::placeholder {
+  color: #888888;
+}
+
+.inputBusca:focus {
+  border-color: #ff4655;
+  box-shadow: 0 0 10px rgba(255, 70, 85, 0.5);
+}
+
+.buttonPrimary {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #ff4655;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.buttonPrimary:hover {
+  background-color: #e03e4d;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff4655;
+}
+
+/* CARD DE EXIBIÇÃO DO RANK */
+.rankCard {
+  background: linear-gradient(135deg, #1f2a35, #0f141a);
+  border: 1px solid #ba3a46;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.rankCard:hover {
+  transform: translateY(-5px);
+  border-color: #ff4655;
+  box-shadow: 0 0 20px rgba(255, 70, 85, 0.4);
+}
+
+.cardTitulo {
+  color: #ff4655;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(255, 70, 85, 0.5);
+}
+
+.rankIcone {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 12px rgba(255, 70, 85, 0.4));
+}

@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Agents from "./pages/Agents";
 import Maps from "./pages/Maps";
 import Login from "./pages/Login";
-import Conta from "./pages/Conta";
+import Perfil from "./pages/Perfil";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="Agents" element={<Agents/>}/>
         <Route path="Maps" element={<Maps/>}/>
         <Route path="Login" element={<Login/>} />
-        <Route path="Conta" element={<Conta/>} />
+        <Route path="Perfil" element={<Perfil/>} />
           </Routes>
     </BrowserRouter>
 
