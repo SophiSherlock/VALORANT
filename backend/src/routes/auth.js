@@ -24,6 +24,8 @@ router.post("/cadastro", async (req, res) => {
 
 router.post("/login", (req, res) => {
     const { email, senha } = req.body;
+    console.log(email, senha);
+    
 
     const sql = "SELECT * FROM usuarios WHERE email = ?";
 
@@ -37,7 +39,9 @@ router.post("/login", (req, res) => {
             return res.status(401).json({ mensagem: "Email ou senha incorretos" });
         }
 
-        const usuario = resultado[0];
+        const usuario = resultado[0]; 
+        console.log(usuario.senha, senha);
+        
 
         const senhaCorreta = await bcrypt.compare(senha, usuario.senha);
 
