@@ -1,16 +1,75 @@
-# React + Vite
+VALORANT WEB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida para consultar informações do jogo VALORANT, como agentes, mapas e ranks. O projeto utiliza React e JavaScript no frontend, Node.js e Express no backend e MySQL para armazenamento de dados.
 
-Currently, two official plugins are available:
+-Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Frontend
+- React
+- JavaScript
+- CSS Modules
 
-## React Compiler
+Backend
+- Node.js
+- Express
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Banco de dados
+- MySQL
+- XAMPP
 
-## Expanding the ESLint configuration
+API externa
+- [Valorant API](https://valorant-api.com/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-O que você irá precisar
+
+Antes de executar o projeto, será necessário instalar:
+
+- Node.js
+- MySQL(utilizando XAMPP, não esqueça de ligar o apache junto com o MySQL)
+- Git(https://git-scm.com/)
+- Um editor de código, como Visual Studio Code.
+
+-Instalar as dependências
+
+Na pasta do frontend:
+
+bash
+npm install
+
+
+-Na pasta do backend:
+
+bash
+npm install
+
+
+-Executar o projeto
+
+Inicie o backend(tenha certeza que está na pasta backend)
+
+bash
+npm start
+
+
+-Inicie o frontend:
+
+bash
+npm run dev
+
+-Funcionalidades
+
+Consulta de agentes do VALORANT.
+Consulta de mapas.
+Pesquisa de ranks competitivos. (ainda em andamento)
+Integração com API externa.
+Comunicação entre frontend e backend.
+Armazenamento de dados utilizando MySQL.
+
+![Imagem de exemplo](img/readme-valorant-img.jpeg)
+
+
+Desenvolvido por Sophia Sherlock.
+
+Projeto acadêmico desenvolvido com o objetivo de praticar e aprimorar conhecimentos em desenvolvimento web FullStack.
+
+Este projeto não possui vínculo oficial com a Riot Games.
